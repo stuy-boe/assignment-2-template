@@ -1,4 +1,9 @@
 const isRightTriangle = (a, b, c) => {
+  if (a <= 0 || b <= 0 || c <= 0) {
+    // degenerate triangles are not triangles
+    return false;
+  }
+
   // bubble sort
   if (a > b) {
     b = a + b;
