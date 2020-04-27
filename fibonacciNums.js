@@ -10,7 +10,8 @@ const fibonacciNums = (n) => {
   } else if (n == 2) {
     return [0, 1];
   } else {
-    for (var i = 0; i < n; i++) {
+    output = [0, 1];
+    for (var i = 0; i < n-2; i++) {
       var temp = first + second;
       first = second;
       second = temp;
